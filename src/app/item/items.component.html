@@ -3,10 +3,20 @@
 <GridLayout>
   <ListView [items]="items">
     <ng-template let-item="item">
-      <StackLayout [nsRouterLink]="['/item', item.id]">
-        <Label class="h1 text-gray-500 p-4" [text]="item.name"></Label>
-        <Label class="h5 text-gray-500 p-4" [text]="item.description"></Label>
-      </StackLayout>
+      <!--<StackLayout [nsRouterLink]="['/item', item.id]">-->
+      <!--<DockLayout stretchLastChild="true" backgroundColor="#3c495e">-->
+      <GridLayout [backgroundColor]="item.bgColor" columns="auto,*,40">
+        <Label col="0" class="h1 text-white p-4" [text]="item.name"></Label>
+        <Label
+          col="1"
+          textWrap="true"
+          class="h5 text-white p-4"
+          [text]="item.description"
+        ></Label>
+        <Image col="2" [src]="item.image" class="avatar-image"></Image>
+      </GridLayout>
+
+      <!--</StackLayout>-->
     </ng-template>
   </ListView>
 </GridLayout>

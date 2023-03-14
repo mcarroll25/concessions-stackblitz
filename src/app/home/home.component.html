@@ -1,0 +1,52 @@
+<ActionBar title="ActionBar Title">
+  <ActionItem
+    ios.systemIcon="9"
+    ios.position="left"
+    android.systemIcon="ic_menu_share"
+    android.position="actionBar"
+  >
+  </ActionItem>
+  <ActionItem
+    text="delete"
+    ios.systemIcon="16"
+    ios.position="right"
+    android.position="popup"
+  >
+  </ActionItem>
+</ActionBar>
+
+<GridLayout rows="*,60">
+  <ScrollView row="0">
+    <FlexboxLayout flexDirection="column" backgroundColor="#3c495e">
+      <label
+        class="p-4 m-4"
+        text="Welcome!"
+        height="270"
+        backgroundColor="#43b883"
+        color="white"
+      ></label>
+      <label text="second" height="70" backgroundColor="#1c6b48"></label>
+      <label text="third" height="70" backgroundColor="#289062"></label>
+    </FlexboxLayout>
+  </ScrollView>
+  <StackLayout row="1" orientation="horizontal">
+    <button textWrap="true" width="25%" textAlignment="center">
+      <FormattedString>
+        <span text="&#xf015;\n" fontFamily="FontAwesome"></span>
+        <span text="Home"></span>
+      </FormattedString>
+    </button>
+    <button textWrap="true" width="25%" textAlignment="center">
+      <FormattedString>
+        <span text="&#xf015;\n" fontFamily="FontAwesome"></span>
+        <span text="Home"></span>
+      </FormattedString>
+    </button>
+    <button textWrap="true" width="25%" textAlignment="center">
+      <FormattedString>
+        <span text="&#xf007;\n" fontFamily="FontAwesome"></span>
+        <span text="Profile"></span>
+      </FormattedString>
+    </button>
+  </StackLayout>
+</GridLayout>

@@ -8,3 +8,10 @@
 Button.-primary {
   font-size: 18;
 }
+
+.avatar-image {
+  width: 350px;
+  height: 350px;
+  horizontal-align: center;
+  stretch: fill;
+}
