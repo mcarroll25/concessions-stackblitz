@@ -1,0 +1,12 @@
+<ActionBar title="Concessons by Bevcarts"> </ActionBar>
+
+<GridLayout>
+  <ListView [items]="items">
+    <ng-template let-item="item">
+      <StackLayout [nsRouterLink]="['/item', item.id]">
+        <Label class="h1 text-gray-500 p-4" [text]="item.name"></Label>
+        <Label class="h5 text-gray-500 p-4" [text]="item.description"></Label>
+      </StackLayout>
+    </ng-template>
+  </ListView>
+</GridLayout>
