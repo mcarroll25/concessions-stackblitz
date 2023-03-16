@@ -9,7 +9,7 @@ import { EventComponent } from './event/event.component';
 import { InactiveComponent } from './event/inactive.component';
 import { ItemDetailComponent } from './item/item-detail.component';
 import { GoogleMapsModule } from '@nativescript/google-maps/angular';
-
+import { MenuSectionComponent } from './_components/menu/menusection.component';
 @NgModule({
   bootstrap: [AppComponent],
   imports: [NativeScriptModule, AppRoutingModule, GoogleMapsModule],
@@ -20,6 +20,7 @@ import { GoogleMapsModule } from '@nativescript/google-maps/angular';
     HomeComponent,
     EventComponent,
     InactiveComponent,
+    MenuSectionComponent,
   ],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],

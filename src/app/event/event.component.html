@@ -1,33 +1,75 @@
 <ActionBar title="LIV Golf+">
   <ActionItem
     ios.position="left"
-    ios.systemIcon="10"
+    ios.systemIcon="8"
     android.systemIcon="ic_menu_profile"
     android.position="actionBar"
-  >
-  </ActionItem>
-  <ActionItem
-    text="delete"
-    ios.systemIcon="12"
-    ios.position="right"
-    android.position="popup"
   >
   </ActionItem>
 
   <!--<ActionItem position="left" icon="font://&#xf0a8;" class="fas"></ActionItem>-->
 </ActionBar>
 
-<GridLayout rows="*,60">
-  <ScrollView row="0" backgroundColor="black">
-    <FlexboxLayout
-      flexDirection="column"
-      justifyContent="flex-start"
-      class="p-0 m-0"
-    >
-      <MapView> </MapView>
-    </FlexboxLayout>
-  </ScrollView>
-  <StackLayout row="1" orientation="horizontal">
+<GridLayout rows="10,40,60,*,60">
+  <Label row="1"> Drinks</Label>
+  <menusection row="3"></menusection>
+
+  <StackLayout row="2">
+    <ScrollView orientation="horizontal" backgroundColor="black">
+      <GridLayout columns="*,*,*,*,*" width="120%">
+        <label
+          col="0"
+          text="Root Beer"
+          height="100%"
+          width="20%"
+          backgroundColor="gray"
+          class="border-4 border-indigo-500 text-center"
+        ></label>
+
+        <label
+          col="1"
+          text="Vodka"
+          height="100%"
+          class="text-center b1"
+          width="20%"
+          class="border-4 p-4 m-4 border-indigo-500 text-center"
+          backgroundColor="white"
+        ></label>
+
+        <label
+          col="2"
+          text="Miller Lite"
+          height="100%"
+          class="text-center b1"
+          width="20%"
+          class="border-4 p-4 m-4 border-indigo-500 text-center"
+          backgroundColor="#43b883"
+        ></label>
+
+        <label
+          col="3"
+          text="Coors"
+          height="100%"
+          class="text-center b1"
+          width="20%"
+          class="border-4 p-4 m-4 border-indigo-500 text-center"
+          backgroundColor="#43b883"
+        ></label>
+
+        <label
+          col="4"
+          text="Seltzer"
+          height="100%"
+          class="text-center b1"
+          width="20%"
+          class="border-4 p-4 m-4 border-indigo-500 text-center"
+          backgroundColor="#43b883"
+        ></label>
+      </GridLayout>
+    </ScrollView>
+  </StackLayout>
+
+  <StackLayout row="4" orientation="horizontal">
     <button textWrap="true" width="25%" textAlignment="center">
       <FormattedString>
         <span text="&#xf015;\n" fontFamily="FontAwesome"></span>
