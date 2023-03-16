@@ -1,4 +1,4 @@
-<ActionBar title="LIV Golf+" backgroundColor="black" color="white">
+<ActionBar title="LIV Golf+">
   <ActionItem
     ios.position="left"
     ios.systemIcon="10"
@@ -21,30 +21,37 @@
   <ScrollView row="0">
     <FlexboxLayout
       flexDirection="column"
-      justifyContent="center"
+      justifyContent="flex-start"
       backgroundColor="black"
-      class="p-0 m-0"
     >
       <image
-        [nsRouterLink]="['/inactiveevent', 1]"
+        [nsRouterLink]="['/event', 1]"
         src="https://s3.amazonaws.com/app.bevcarts.v2/liv_tucson.png"
         class="p-0 m-0"
-        text="Welcome to LIV Golf"
-        height="280"
+        height="220"
         margin="0 0 0 0"
         padding="0 0 0 0"
-        stretch="aspectFill"
       ></image>
-      <image
-        [nsRouterLink]="['/event', 2]"
-        magin="0 0 0 0"
-        padding="0 0 0 0"
-        src="https://s3.amazonaws.com/app.bevcarts.v2/liv_mayakoba.png"
-        class="p-0 m-0"
-        text="Welcome to LIV Golf"
-        height="400"
-        stretch="aspectFill"
-      ></image>
+      <label
+        color="white"
+        class="text-lg font-medium px-2 py-1 text-center text-blue-60 pb-10"
+        >LIV Golf Tuscon | Round 1 | March 17, 2023</label
+      >
+
+      <label
+        color="white"
+        textWrap="true"
+        class="text-md font-medium px-2 py-1 text-center text-blue-600 pb-10"
+        >LIV Golf is coming to The Gallery Golf Club, March 17-19. Cam Smith,
+        Dustin Johnson, Bryson DeChambeau, Phil Michelson Brooks Koepka + more.
+        Big names. Big energy.</label
+      >
+
+      <label
+        color="white"
+        class="text-3xl font-medium px-2 py-1 text-center text-blue-600"
+        >Login/Signup!</label
+      >
     </FlexboxLayout>
   </ScrollView>
   <StackLayout row="1" orientation="horizontal">
@@ -57,13 +64,13 @@
     <button textWrap="true" width="25%" textAlignment="center">
       <FormattedString>
         <span text="&#xf015;\n" fontFamily="FontAwesome"></span>
-        <span text="Live"></span>
+        <span text="Home"></span>
       </FormattedString>
     </button>
     <button textWrap="true" width="25%" textAlignment="center">
       <FormattedString>
         <span text="&#xf007;\n" fontFamily="FontAwesome"></span>
-        <span text="Menu"></span>
+        <span text="Profile"></span>
       </FormattedString>
     </button>
   </StackLayout>

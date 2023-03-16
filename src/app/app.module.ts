@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './item/items.component';
 import { HomeComponent } from './home/home.component';
+import { EventComponent } from './event/event.component';
+import { InactiveComponent } from './event/inactive.component';
 import { ItemDetailComponent } from './item/item-detail.component';
+import { GoogleMapsModule } from '@nativescript/google-maps/angular';
 
 @NgModule({
   bootstrap: [AppComponent],
-  imports: [NativeScriptModule, AppRoutingModule],
+  imports: [NativeScriptModule, AppRoutingModule, GoogleMapsModule],
   declarations: [
     AppComponent,
     ItemsComponent,
     ItemDetailComponent,
     HomeComponent,
+    EventComponent,
+    InactiveComponent,
   ],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],

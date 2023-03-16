@@ -1,4 +1,4 @@
-<ActionBar title="LIV Golf+" backgroundColor="black" color="white">
+<ActionBar title="LIV Golf+">
   <ActionItem
     ios.position="left"
     ios.systemIcon="10"
@@ -18,33 +18,13 @@
 </ActionBar>
 
 <GridLayout rows="*,60">
-  <ScrollView row="0">
+  <ScrollView row="0" backgroundColor="black">
     <FlexboxLayout
       flexDirection="column"
-      justifyContent="center"
-      backgroundColor="black"
+      justifyContent="flex-start"
       class="p-0 m-0"
     >
-      <image
-        [nsRouterLink]="['/inactiveevent', 1]"
-        src="https://s3.amazonaws.com/app.bevcarts.v2/liv_tucson.png"
-        class="p-0 m-0"
-        text="Welcome to LIV Golf"
-        height="280"
-        margin="0 0 0 0"
-        padding="0 0 0 0"
-        stretch="aspectFill"
-      ></image>
-      <image
-        [nsRouterLink]="['/event', 2]"
-        magin="0 0 0 0"
-        padding="0 0 0 0"
-        src="https://s3.amazonaws.com/app.bevcarts.v2/liv_mayakoba.png"
-        class="p-0 m-0"
-        text="Welcome to LIV Golf"
-        height="400"
-        stretch="aspectFill"
-      ></image>
+      <MapView> </MapView>
     </FlexboxLayout>
   </ScrollView>
   <StackLayout row="1" orientation="horizontal">
@@ -57,13 +37,13 @@
     <button textWrap="true" width="25%" textAlignment="center">
       <FormattedString>
         <span text="&#xf015;\n" fontFamily="FontAwesome"></span>
-        <span text="Live"></span>
+        <span text="Home"></span>
       </FormattedString>
     </button>
     <button textWrap="true" width="25%" textAlignment="center">
       <FormattedString>
         <span text="&#xf007;\n" fontFamily="FontAwesome"></span>
-        <span text="Menu"></span>
+        <span text="Profile"></span>
       </FormattedString>
     </button>
   </StackLayout>
