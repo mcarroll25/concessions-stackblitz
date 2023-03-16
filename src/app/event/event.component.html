@@ -10,66 +10,14 @@
   <!--<ActionItem position="left" icon="font://&#xf0a8;" class="fas"></ActionItem>-->
 </ActionBar>
 
-<GridLayout rows="10,40,60,*,60">
-  <Label row="1"> Drinks</Label>
-  <menusection row="3"></menusection>
+<GridLayout rows="10,60,10,60,10,60,*,60">
+  <menusection [sectiondata]="section1data" row="1"></menusection>
 
-  <StackLayout row="2">
-    <ScrollView orientation="horizontal" backgroundColor="black">
-      <GridLayout columns="*,*,*,*,*" width="120%">
-        <label
-          col="0"
-          text="Root Beer"
-          height="100%"
-          width="20%"
-          backgroundColor="gray"
-          class="border-4 border-indigo-500 text-center"
-        ></label>
+  <menusection [sectiondata]="section2data" row="3"></menusection>
 
-        <label
-          col="1"
-          text="Vodka"
-          height="100%"
-          class="text-center b1"
-          width="20%"
-          class="border-4 p-4 m-4 border-indigo-500 text-center"
-          backgroundColor="white"
-        ></label>
+  <menusection [sectiondata]="section3data" row="5"></menusection>
 
-        <label
-          col="2"
-          text="Miller Lite"
-          height="100%"
-          class="text-center b1"
-          width="20%"
-          class="border-4 p-4 m-4 border-indigo-500 text-center"
-          backgroundColor="#43b883"
-        ></label>
-
-        <label
-          col="3"
-          text="Coors"
-          height="100%"
-          class="text-center b1"
-          width="20%"
-          class="border-4 p-4 m-4 border-indigo-500 text-center"
-          backgroundColor="#43b883"
-        ></label>
-
-        <label
-          col="4"
-          text="Seltzer"
-          height="100%"
-          class="text-center b1"
-          width="20%"
-          class="border-4 p-4 m-4 border-indigo-500 text-center"
-          backgroundColor="#43b883"
-        ></label>
-      </GridLayout>
-    </ScrollView>
-  </StackLayout>
-
-  <StackLayout row="4" orientation="horizontal">
+  <StackLayout row="8" orientation="horizontal">
     <button textWrap="true" width="25%" textAlignment="center">
       <FormattedString>
         <span text="&#xf015;\n" fontFamily="FontAwesome"></span>
