@@ -1,54 +1,18 @@
 <StackLayout>
-  <Label>{{ sectiondata.name }}</Label>
+  <Label class="text-xl font-bold ml-3">{{ sectiondata.name }}</Label>
   <ScrollView orientation="horizontal" backgroundColor="black">
-    <GridLayout columns="*,*,*,*,*" width="120%">
+    <GridLayout
+      columns="{{ sectiondata.cols }}"
+      width="{{ sectiondata.colcount * 20 }}%"
+    >
       <label
-        col="0"
-        text="Root Beer"
+        *ngFor="let item of sectiondata.options; index as i"
+        col="i"
+        text="{{ item.name }}"
         height="100%"
         width="20%"
         backgroundColor="white"
         class="border-4 border-indigo-500 text-center"
-      ></label>
-
-      <label
-        col="1"
-        text="Vodka"
-        height="100%"
-        class="text-center b1"
-        width="20%"
-        class="border-4 p-4 m-4 border-indigo-500 text-center"
-        backgroundColor="white"
-      ></label>
-
-      <label
-        col="2"
-        text="Miller Lite"
-        height="100%"
-        class="text-center b1"
-        width="20%"
-        class="border-4 p-4 m-4 border-indigo-500 text-center"
-        backgroundColor="white"
-      ></label>
-
-      <label
-        col="3"
-        text="Coors"
-        height="100%"
-        class="text-center b1"
-        width="20%"
-        class="border-4 p-4 m-4 border-indigo-500 text-center"
-        backgroundColor="white"
-      ></label>
-
-      <label
-        col="4"
-        text="Seltzer"
-        height="100%"
-        class="text-center b1"
-        width="20%"
-        class="border-4 p-4 m-4 border-indigo-500 text-center"
-        backgroundColor="white"
       ></label>
     </GridLayout>
   </ScrollView>

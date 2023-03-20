@@ -12,16 +12,35 @@ export class EventComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   section1data = {
-    name: 'Section 1',
-    row: 2,
+    name: 'Drinks',
+    cols: '*,*,*,*,*,*',
+    colcount: 6,
+    options: [
+      { name: 'Root Beer' },
+      { name: 'Vodka' },
+      { name: 'Miller Lite' },
+      { name: 'Coors' },
+      { name: 'Water' },
+      { name: 'Tea' },
+    ],
   };
   section2data = {
-    name: 'Section 2',
-    row: 4,
+    name: 'Food',
+    cols: '*,*,*,*,*',
+    colcount: 5,
+    options: [
+      { name: 'Hot Dog' },
+      { name: 'Cheese Burger' },
+      { name: 'Turkey Sandwich' },
+      { name: 'Snickers' },
+      { name: 'Reeses' },
+    ],
   };
   section3data = {
-    name: 'Section 3',
-    row: 6,
+    name: 'Merchandise',
+    cols: '*,*,*,*,*',
+    colcount: 5,
+    options: [{ name: 'Umbrella' }, { name: 'Golf Balls' }],
   };
 
   ngOnInit(): void {
