@@ -1,19 +1,28 @@
-<StackLayout>
-  <Label class="text-xl font-bold ml-3">{{ sectiondata.name }}</Label>
-  <ScrollView orientation="horizontal" backgroundColor="black">
+<StackLayout class="ml-0">
+  <label
+    class="text-2xl font-bold color-red ml-5"
+    text="{{ sectiondata.name }}"
+    color="black"
+  ></label>
+  <ScrollView orientation="horizontal" class="ml-0">
     <GridLayout
       columns="{{ sectiondata.cols }}"
-      width="{{ sectiondata.colcount * 20 }}%"
+      width="{{ sectiondata.colcount * 40 }}%"
     >
-      <label
+      <StackLayout
+        backgroundColor="lightgray"
+        orientation="vertical"
         *ngFor="let item of sectiondata.options; index as i"
-        col="i"
-        text="{{ item.name }}"
-        height="100%"
-        width="20%"
-        backgroundColor="white"
-        class="border-4 border-indigo-500 text-center"
-      ></label>
+        col="{{ i }}"
+      >
+        <image src="{{ item.image }}" height="80%"></image>
+        <label
+          text="{{ item.name }}"
+          width="100%"
+          class="text-center text-xl"
+          color="black"
+        ></label>
+      </StackLayout>
     </GridLayout>
   </ScrollView>
 </StackLayout>

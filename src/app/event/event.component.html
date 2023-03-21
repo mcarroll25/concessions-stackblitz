@@ -1,4 +1,4 @@
-<ActionBar title="LIV Golf+">
+<ActionBar title="LIV Golf">
   <ActionItem
     ios.position="left"
     ios.systemIcon="8"
@@ -10,14 +10,26 @@
   <!--<ActionItem position="left" icon="font://&#xf0a8;" class="fas"></ActionItem>-->
 </ActionBar>
 
-<GridLayout rows="10,60,10,60,10,60,*,60">
-  <menusection [sectiondata]="section1data" row="1"></menusection>
+<GridLayout rows="*,60">
+  <StackLayout row="0">
+    <ScrollLayout orientation="vertical" row="0">
+      <GridLayout rows="200,200,200,200,200,200">
+        <menusection [sectiondata]="section1data" row="0"></menusection>
 
-  <menusection [sectiondata]="section2data" row="3"></menusection>
+        <menusection [sectiondata]="section2data" row="1"></menusection>
 
-  <menusection [sectiondata]="section3data" row="5"></menusection>
+        <menusection [sectiondata]="section3data" row="2"></menusection>
 
-  <StackLayout row="8" orientation="horizontal">
+        <menusection [sectiondata]="section4data" row="3"></menusection>
+
+        <menusection [sectiondata]="section2data" row="4"></menusection>
+
+        <menusection [sectiondata]="section1data" row="5"></menusection>
+      </GridLayout>
+    </ScrollLayout>
+  </StackLayout>
+
+  <StackLayout row="1" orientation="horizontal">
     <button textWrap="true" width="25%" textAlignment="center">
       <FormattedString>
         <span text="&#xf015;\n" fontFamily="FontAwesome"></span>
