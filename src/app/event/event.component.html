@@ -11,8 +11,8 @@
 </ActionBar>
 
 <GridLayout rows="*,60">
-  <StackLayout row="0">
-    <ScrollLayout orientation="vertical" row="0">
+  <ScrollView orientation="vertical" row="0">
+    <StackLayout>
       <GridLayout rows="200,200,200,200,200,200">
         <menusection [sectiondata]="section1data" row="0"></menusection>
 
@@ -26,8 +26,8 @@
 
         <menusection [sectiondata]="section1data" row="5"></menusection>
       </GridLayout>
-    </ScrollLayout>
-  </StackLayout>
+    </StackLayout>
+  </ScrollView>
 
   <StackLayout row="1" orientation="horizontal">
     <button textWrap="true" width="25%" textAlignment="center">

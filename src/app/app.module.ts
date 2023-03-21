@@ -10,6 +10,8 @@ import { InactiveComponent } from './event/inactive.component';
 import { ItemDetailComponent } from './item/item-detail.component';
 import { GoogleMapsModule } from '@nativescript/google-maps/angular';
 import { MenuSectionComponent } from './_components/menu/menusection.component';
+//import { NativeScriptMaterialTabsModule } from '@nativescript-community/ui-material-bottom-navigation/angular';
+
 @NgModule({
   bootstrap: [AppComponent],
   imports: [NativeScriptModule, AppRoutingModule, GoogleMapsModule],

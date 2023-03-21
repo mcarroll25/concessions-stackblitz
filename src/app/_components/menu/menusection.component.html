@@ -1,6 +1,6 @@
 <StackLayout class="ml-0">
   <label
-    class="text-2xl font-bold color-red ml-5"
+    class="text-2xl font-bold ml-5"
     text="{{ sectiondata.name }}"
     color="black"
   ></label>
@@ -10,12 +10,17 @@
       width="{{ sectiondata.colcount * 40 }}%"
     >
       <StackLayout
-        backgroundColor="lightgray"
+        backgroundColor="white"
         orientation="vertical"
         *ngFor="let item of sectiondata.options; index as i"
         col="{{ i }}"
       >
-        <image src="{{ item.image }}" height="80%"></image>
+        <image
+          src="{{ item.image }}"
+          height="80%"
+          stretch="fill"
+          class="m-1"
+        ></image>
         <label
           text="{{ item.name }}"
           width="100%"
